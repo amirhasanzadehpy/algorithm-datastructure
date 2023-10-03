@@ -1,1 +1,36 @@
-test.go
+# Compiled binary files
+*.exe
+*.out
+*.o
+
+# Output directories
+/_output/
+/bin/
+/vendor/
+/go.sum
+
+# Dependency directories
+/vendor/
+/go.mod
+
+# Environment-specific files
+.env
+
+# Log files
+*.log
+
+# macOS
+.DS_Store
+
+# Visual Studio Code settings
+.vscode/
+
+# GoLand IDE settings
+.idea/
+*.iml
+
+# Compiled Cgo files
+_cgo_*
+
+# End of file
+

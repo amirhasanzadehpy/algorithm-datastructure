@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	//test sameFreuqncy algo
+	//  test sameFreuqncy algo
 	//	result := problems.IsSame([]int{1, 2, 3}, []int{1, 4, 9})
 	//	result := problems.ValidAnagram("", "")
 	//	result := problems.SumZero([]int{-4, -3, -2, -1, 0, 1, 2, 5})

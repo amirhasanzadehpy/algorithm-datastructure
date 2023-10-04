@@ -2,11 +2,10 @@ package main
 
 import (
 	"algorithm-datastructure/topics"
-	"fmt"
 )
 
 func main() {
-	arr := []int{234, 456, 29, 1, 122, 995}
+	//	arr := []int{234, 456, 29, 1, 122, 995}
 	//  test sameFreuqncy algo
 	//	result := problems.IsSame([]int{1, 2, 3}, []int{1, 4, 9})
 	//	result := problems.ValidAnagram("", "")
@@ -18,6 +17,14 @@ func main() {
 	//	result := topics.InsertionSort([]int{32, 3323, 312, 7, 8})
 	//	result := topics.MergeSort([]int{23, 34, 11, 10, 245, 2})
 	//  topics.QuickSort(arr, 0, len(arr)-1)
-	result := topics.RadixSort(arr)
-	fmt.Println(result)
+	//  result := topics.RadixSort(arr)
+	list := topics.NewLinkedList()
+	list.Push("Hello")
+	list.Push("2Hello")
+	list.Push("3Hello")
+	list.Push("4Hello")
+	list.Print()
+
+	list.Reverse()
+	list.Print()
 }

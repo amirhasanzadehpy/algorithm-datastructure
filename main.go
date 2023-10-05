@@ -2,6 +2,7 @@ package main
 
 import (
 	"algorithm-datastructure/topics"
+	"fmt"
 )
 
 func main() {
@@ -18,13 +19,20 @@ func main() {
 	//	result := topics.MergeSort([]int{23, 34, 11, 10, 245, 2})
 	//  topics.QuickSort(arr, 0, len(arr)-1)
 	//  result := topics.RadixSort(arr)
-	list := topics.NewLinkedList()
-	list.Push("Hello")
-	list.Push("2Hello")
-	list.Push("3Hello")
-	list.Push("4Hello")
-	list.Print()
+	//	list := topics.NewLinkedList()
+	//  list.Push("Hello")
+	//	list.Reverse()
+	//  stack := topics.NewStack()
+	//  stack.Push(1)
+	//  result := stack.Pop()
+	//  fmt.Println(result, "this is poped value")
+	queue := topics.NewQueue()
+	queue.Enqueue(1)
+	queue.Enqueue(2)
+	queue.Enqueue(3)
+	queue.Print()
 
-	list.Reverse()
-	list.Print()
+	result := queue.Dequeue()
+	queue.Print()
+	fmt.Println(result, "this is poped value")
 }

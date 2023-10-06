@@ -31,7 +31,7 @@ func (q *queue) Enqueue(value interface{}) {
 	q.Size++
 }
 
-func (q *queue) Dequeue() interface{} {
+func (q *queue) Dequeue() any {
 	if q.Size == 0 {
 		return nil
 	}
@@ -44,7 +44,7 @@ func (q *queue) Dequeue() interface{} {
 
 	q.first = temp.next
 	q.Size--
-	return temp.val
+	return temp
 }
 
 func (q *queue) Print() {

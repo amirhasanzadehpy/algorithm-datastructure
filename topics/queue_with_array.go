@@ -4,6 +4,10 @@ type Queue struct {
 	items []interface{}
 }
 
+func NewQ() *Queue {
+	return &Queue{}
+}
+
 func (q *Queue) Enqueue(item interface{}) {
 	q.items = append(q.items, item)
 }

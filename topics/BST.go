@@ -127,3 +127,45 @@ func (b *bst) DFSPreOrder() []int {
 
 	return data
 }
+
+func (b *bst) DFSPostOrder() []int {
+	data := []int{}
+	current := b.root
+	var traverse func(node *node)
+	traverse = func(node *node) {
+		if node.left != nil {
+			traverse(node.left)
+		}
+
+		if node.right != nil {
+			traverse(node.right)
+		}
+
+		data = append(data, node.value)
+	}
+
+	traverse(current)
+
+	return data
+}
+
+func (b *bst) DFSInOrder() []int {
+	data := []int{}
+	current := b.root
+	var traverse func(node *node)
+	traverse = func(node *node) {
+		if node.left != nil {
+			traverse(node.left)
+		}
+
+		data = append(data, node.value)
+
+		if node.right != nil {
+			traverse(node.right)
+		}
+	}
+
+	traverse(current)
+
+	return data
+}

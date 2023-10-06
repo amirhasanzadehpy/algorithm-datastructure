@@ -43,6 +43,6 @@ func main() {
 	tree.Insert(8)
 	tree.Insert(20)
 
-	result := tree.DFSPreOrder()
+	result := tree.DFSInOrder()
 	fmt.Println(result)
 }

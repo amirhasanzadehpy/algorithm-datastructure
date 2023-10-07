@@ -2,7 +2,6 @@ package main
 
 import (
 	"algorithm-datastructure/topics"
-	"fmt"
 )
 
 func main() {
@@ -35,14 +34,16 @@ func main() {
 	//  result := queue.Dequeue()
 	//  queue.Print()
 
-	tree := topics.NewBst()
-	tree.Insert(10)
-	tree.Insert(6)
-	tree.Insert(15)
-	tree.Insert(3)
-	tree.Insert(8)
-	tree.Insert(20)
+	//	tree := topics.NewBst()
+	//	tree.Insert(10)
+	//	tree.Insert(6)
+	//	tree.Insert(15)
+	//	tree.Insert(3)
+	//	tree.Insert(8)
+	//	tree.Insert(20)
 
-	result := tree.DFSInOrder()
-	fmt.Println(result)
+	//	result := tree.DFSInOrder()
+	//	fmt.Println(result)
+	heap := topics.NewHeaps()
+	heap.Insert(55)
 }

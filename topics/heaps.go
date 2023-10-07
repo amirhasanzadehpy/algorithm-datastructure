@@ -11,7 +11,6 @@ type heaps struct {
 func NewHeaps() *heaps {
 	return &heaps{values: []int{}}
 }
-
 func (h *heaps) bubbleUp() {
 	idx := len(h.values) - 1
 	element := h.values[idx]
